@@ -19,13 +19,16 @@
         <script src="scripts/scripts.js" defer></script>
 </head>
 
+
+<body>
+
 <header>
     <nav class="nav full-nav">
         <div>
            <img src="images/ALEX KO.png" alt="alex ko's logo" style="width: 60%;">
         </div>
         <div>
-            <a href="home.html">Home</a>
+            <a href="index.html">Home</a>
             <a href="About.html">About</a>
             <a href="Work.html">Work</a>
             <a href="Contact.html">Contact</a>
@@ -41,6 +44,52 @@
 
 </main>
 
+<style>
+    html, body {
+    height: 100%; 
+    margin: 0; 
+}
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    min-height: 100vh; 
+}
+
+
+main {
+    flex: 1; 
+}
+
+footer {
+    background-color: #fff;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    padding: 1rem;
+    padding-right: 100px;
+    color: #000;
+    width: 100%;
+    text-align: center; 
+}
+
+footer div:nth-child(2) {
+    text-align: center;
+}
+
+footer div:nth-child(2) div:nth-child(1) {
+    display: flex;
+    justify-content: center;
+}
+
+footer div:nth-child(2) div:nth-child(1) a {
+   text-decoration: none;
+   color: #000;
+}
+</style>
+
 <footer>
     <div>
         <img src="images/ALEX KO.png" alt="alex ko's logo" style="width: 25%;" loading:"lazy">
@@ -52,5 +101,7 @@
         <h4>© 2025 Alex Ko. All rights reserved.</h4>
     </div>
  </footer>
+
+</body>
 
  </html>
