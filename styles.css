@@ -2,8 +2,10 @@
     font-family: 'Montserrat', sans-serif;
 }
 
+
 body {
     background-color: #fff;
+    padding-top: 5rem;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -14,15 +16,16 @@ body {
 }
 
 header {
-    position: absolute;
+    position: relative fixed;
     top: 0;
-    left: 0;
+    left: -100px;
     width: 100%;
     height: 5rem;  
     background-color: #fff;
     z-index: 1000; 
     text-align: center;
     padding: 20px;
+    padding-right: 100px;
 }
 
 .header img {
@@ -41,11 +44,14 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: .5rem;
+    padding: 0.5rem;
     position: fixed;
     width: 100%;
-    height: 3rem;
-    box-shadow: 0 4px 6px rgba(0,0,0,0,2);
+    height: 4rem;  
+    top: 0;
+    left: 0;
+    z-index: 1000;  
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2); 
 }
 
 .nav div:nth-child(2) {
@@ -194,26 +200,27 @@ header {
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-    margin-top: 50px; 
-    padding-left: 30px;  /* Adds space on the left side */
-    padding-right: 30px;
+    gap: 30px;
+    margin-top: 50px;
+    padding-left: 0;
+    padding-right: 0;
+    width: 100vw;  
+    box-sizing: border-box;  
 }
 
 .project {
     position: relative;
     border-radius: 10px;
     overflow: hidden;
-    height: 400px;
+    height: 300px;
+    width: 100%;
     transition: transform 0.3s ease-in-out;
 }
 
 .project img {
-    width: 100%;  
-    height: 100%; 
-    object-fit: cover; 
-    display: block;
-    transition: transform 0.3s ease;
+    width: 100%;
+    height: auto; 
+    object-fit: cover;
 }
 
 .project:hover img {
@@ -286,10 +293,12 @@ header {
 }
 
 .black-spacer {
-    width: 100%;
+    width: 100vw;
     height: 50px; 
     background-color: black;
     margin-top: 150px; 
+    margin-left: 0;
+    margin-right: 0;
 }
 /*header*/
 
@@ -386,12 +395,13 @@ header {
     height: min-content;
 }
 
-/* red spacer */ 
+/* black spacer */ 
 
     .black-spacer {
         height: 50px;
         background-color: black;
         margin-top: 150px;
+        width: 100vw; 
     }
 
 main {

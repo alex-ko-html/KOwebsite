@@ -20,6 +20,20 @@
 
 <body> 
 
+    <style> 
+        .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin-top: 50px;
+    padding-left: 0;
+    padding-right: 0;
+    width: 100vw;  
+    box-sizing: border-box;  
+}
+
+
+    </style>
     <header>
         <nav class="nav full-nav">
             <div>
@@ -32,6 +46,23 @@
                 <a href="Contact.html">Contact</a>
             </div>
         </nav>
+        <nav class="nav mobile-nav">
+            <div>
+                <img src="images/ALEX KO.png" alt="alex ko's logo" style="width: 25%;">
+            </div>
+            <div>
+                <i class="fa-solid fa-bars" title="button to open navigation" onclick="on()"></i>
+            </div>
+
+            <div class="dropdown-menu" id="dropdownMenu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="About.html">About</a></li>
+                    <li><a href="Work.html">Work</a></li>
+                    <li><a href="Contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </header>
     
         <main>
     
@@ -58,7 +89,7 @@
                             </div>
                         </div>
                         <div class="project">
-                            <img src="images/script.png" alt="Troy White">
+                            <img src="images/coldwar.png" alt="Troy White">
                             <div class="project-info">
                                 <h3>A cold war story.</h3>
                                 <p>Feature film. 100pgs. Contact for link.</p>
@@ -66,15 +97,15 @@
                             </div>
                         </div>
                         <div class="project">
-                            <img src="images/script.png" alt="Troy White">
+                            <img src="images/yangs.png" alt="Troy White">
                             <div class="project-info">
-                                <h3>A family of killer assassins.</h3>
+                                <<h3>A family of killer assassins.</h3>
                                 <p>Episode 1. 42pgs. Contact for link.</p>
                                 <a href="Contact.html" class="view-btn">View</a>
                             </div>
                         </div>
                         <div class="project">
-                            <img src="images/script.png" alt="Troy White">
+                            <img src="images/chameleon.png" alt="Troy White">
                             <div class="project-info">
                                 <h3>A family roadtrip.</h3>
                                 <p>Feature film. 96pgs. Contact for link.</p>
@@ -86,7 +117,7 @@
                             <div class="project-info">
                                 <h3>Alex Ko: From Iowa to Broadway</h3>
                                 <p>Autobiography.</p>
-                                <a href="https://www.barnesandnoble.com/w/alex-ko-alex-ko/1113200683" class="view-btn">View</a>
+                                <a href="https://www.barnesandnoble.com/w/alex-ko-alex-ko/1113200683" class="view-btn" target="_blank">View</a>
                             </div>
                         </div>
                     </div>
